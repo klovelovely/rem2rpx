@@ -1,0 +1,20 @@
+{
+  "name": "rem2rpx",
+  "version": "1.0.0",
+  "description": "rem 单位批量转换为微信小程序专用的 rpx 单位",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klovelovely/rem2rpx.git"
+  },
+  "keywords": ["rem", "rpx", "wechat", "mini program", "微信小程序"],
+  "author": "Kavalon <klovelovely@live.com> (http://mar.moe)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/klovelovely/rem2rpx/issues"
+  },
+  "homepage": "https://github.com/klovelovely/rem2rpx#readme"
+}
