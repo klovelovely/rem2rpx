@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rem to rpx</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+<h3><label for="source">原始代码</label></h3>
+
+<textarea name="source" id="source" cols="120" rows="20">
+    /* choice.wxss */
+.choice-address {
+    padding-top: 2.8125rem
+}
+
+.choice-address .choice-address-index {
+    padding: .625rem 1rem;
+    background-color: #fff
+}
+
+.choice-address .choice-address-index h2 {
+    color: #999;
+    line-height: 2.125rem;
+    font-size: .875rem
+}
+
+.choice-address .choice-address-index .now-location {
+    height: 2.1875rem
+}
+
+.choice-address .choice-address-index .now-location em, .choice-address .choice-address-index .now-location a {
+    display: inline-block
+}
+
+.choice-address .choice-address-index .now-location em {
+    display: block;
+    width: 100%;
+    padding-right: 5.625rem;
+    line-height: 2.1875rem;
+    font-size: .9375rem
+}
+
+.choice-address .choice-address-index .now-location a {
+    height: 1.4375rem;
+    padding-left: 1.5rem;
+    top: .375rem;
+    right: 0;
+    line-height: 1.625rem;
+    font-size: .75rem;
+    color: #ff5d3d;
+    background: url("../images/icon_now_address.png") no-repeat left center;
+    -webkit-background-size: 1rem auto;
+    background-size: 1rem auto
+}
+
+.choice-address .choice-address-item {
+    background: #fff;
+    padding: 0 1rem 0
+}
+
+.choice-address .choice-address-item h2 {
+    line-height: .875rem;
+    color: #999;
+    font-size: .875rem;
+    padding: 1.25rem 0
+}
+
+.choice-address .choice-address-item ul {
+    max-height: 12.5rem
+}
+
+.choice-address .choice-address-item ul li a {
+    display: block;
+    width: 100%;
+    padding: 1rem 1rem 1rem 0;
+    line-height: 1.375rem
+}
+
+.choice-address .choice-address-item ul li a div {
+    width: 100%;
+    font-size: .875rem;
+    line-height: 1.125rem;
+    margin-bottom: .5rem;
+    padding-top: .125rem;
+    overflow: hidden
+}
+
+.choice-address .choice-address-item ul li a div span {
+    display: inline-block;
+    line-height: 1.4;
+    padding-top: .125rem
+}
+
+.choice-address .choice-address-item ul li a div span:first-child {
+    margin-right: 1rem
+}
+
+.choice-address .choice-address-item ul li a p {
+    padding-left: 1.75rem;
+    line-height: .75rem;
+    color: #999;
+    font-size: .75rem
+}
+
+.choice-address .choice-address-item ul li a p.no_note {
+    padding-left: 0
+}
+
+.choice-address .choice-address-item ul li.cur:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1rem;
+    height: 1rem;
+    margin-top: -.3125rem;
+    background: url(../images/icon_check_active.png) no-repeat center;
+    -webkit-background-size: 1rem;
+    background-size: 1rem
+}
+
+.choice-address .choice-address-item ul li:first-child a {
+    padding-top: 0
+}
+
+.choice-address .choice-address-item ul li:last-child a {
+    border: 0
+}
+
+.choice-address .choice-address-item .empty-btn {
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    background: #fff;
+    color: #999;
+    font-size: .9375rem
+}
+
+.choice-address .history-address-item {
+    background: #fff;
+    padding: 1.25rem 0 .375rem 1rem
+}
+
+.choice-address .history-address-item .icon-clear {
+    position: absolute;
+    top: 1rem;
+    right: 1rem
+}
+
+.choice-address .history-address-item h2 {
+    line-height: .875rem;
+    color: #999;
+    font-size: .875rem;
+    padding-bottom: .875rem
+}
+
+.choice-address .history-address-item ul li a {
+    display: block;
+    width: 100%;
+    line-height: .9375rem;
+    font-size: .9375rem;
+    padding: 1rem 0
+}
+
+.choice-address .history-address-item ul li:first-child a {
+    padding: .375rem 0 1rem
+}
+
+.choice-address .history-address-item .more_address a {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: .625rem 1rem .375rem 0;
+    line-height: 1.375rem
+}
+
+.choice-address .history-address-item .more_address a:after {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    content: "";
+    border-left: 0.125rem solid #999;
+    border-bottom: 0.125rem solid #999;
+    -webkit-transform: translateY(-50%) scaleY(1) rotateZ(-136deg);
+    transform: translateY(-50%) scaleY(1) rotateZ(-136deg)
+}
+
+.error img {
+    display: block;
+    width: 42.13333%;
+    margin: 7.625rem auto 2.5rem
+}
+
+.error p {
+    margin: 0 .75rem;
+    color: #808080;
+    font-size: .9375rem;
+    text-align: center
+}
+
+.choice-address-result {
+    position: absolute;
+    top: 2.8125rem;
+    left: 0;
+    right: 0;
+    background: #fff;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    z-index: 9
+}
+
+.choice-address-result ul {
+    padding-left: 1rem
+}
+
+.choice-address-result ul li {
+    width: 100%
+}
+
+.choice-address-result ul li a {
+    display: block;
+    padding: .75rem 1rem .75rem 0
+}
+
+.choice-address-result ul li a em {
+    line-height: 1.375rem;
+    font-size: .875rem
+}
+
+.choice-address-result ul li a p {
+    line-height: 1.125rem;
+    font-size: .75rem;
+    color: #777;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+    </textarea>
+
+<div>
+    <button id="convertButton">点击转换</button>
+</div>
+
+<h3><label for="target">转换百分比之后的代码</label></h3>
+
+<textarea name="target" id="target" cols="120" rows="20"></textarea>
+
+
+<script src="index.js"></script>
+
+</body>
+</html>

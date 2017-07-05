@@ -1,0 +1,22 @@
+body{
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Segoe UI", "Microsoft Yahei", Tahoma, Arial, STHeiti, sans-serif;
+    color: #099;
+}
+textarea{
+    display:block;
+    width:100%;
+}
+button{
+    display:block;
+    margin:1em auto;
+    padding:.6em 3em;
+    border-radius:3px;
+    background:#00a0a0;
+    color:#fff;
+    font:16px 'Microsoft YaHei';
+    border:0 none;
+    cursor:pointer;
+}
+button:hover{
+    background:#008080;
+}
