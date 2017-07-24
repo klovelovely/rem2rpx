@@ -10,4 +10,4 @@ rem 单位批量转换为微信小程序专用的 rpx 单位
     
         当然, 如果没有全局匹配标识符, 则每次匹配时的 lastIndex 总是为 0.
         
-    2.  splice 替换导致要匹配的 sourceString 整体长度发生了变化
+    2.  splice 替换导致要匹配的 sourceString 整体长度发生了变化, 而此时的 lastIndex 并没有更新, 依然保存了 sourceString 长度变化之前的 index 信息, 所以需要在长度变化时, 同步更新 lastIndex~
